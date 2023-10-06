@@ -1,0 +1,20 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<h1 class="text-center my-4">Supplier Details</h1>
+
+<div class="container border border-primary rounded-3 p-3">
+    <p>Supplier no: <span class="fw-bold">{{ctx.No}}</span></p>
+    <p>Telephone no: <span class="fw-bold">{{ctx.TelephoneNo}}</span></p>
+    <p>Company Pin No: <span class="fw-bold">{{ctx.CompanyPINNo}}</span></p>
+    <p>Contact Phone No: <span class="fw-bold">{{ctx.ContactPhoneNo}}</span></p>
+    <p>Contact email address: <span class="fw-bold">{{ctx.ContactEMailAddress}}</span></p>
+    <p>Contact Person Name: <span class="fw-bold">{{ctx.ContactPersonName}}</span></p>
+    <p>Postcode: <span class="fw-bold">{{ctx.PostCode}}</span></p>
+    <p>Postal Address: <span class="fw-bold">{{ctx.PostalAddress}}</span></p>
+    <p>Email: <span class="fw-bold">{{ctx.Email}}</span></p>
+    <p>City: <span class="fw-bold">{{ctx.City}}</span></p>
+</div>
+
+{% endblock %}

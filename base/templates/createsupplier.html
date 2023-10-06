@@ -1,0 +1,72 @@
+{% extends 'index.html' %}
+{% block content %}
+
+<h1 class="text-center mt-4">Create supplier</h1>
+
+<div class="w-100 d-flex justify-content-center mt-4">
+    <form action="" method="post" class="form flex w-50 margin-auto border border-2 rounded-3 p-4">
+        {% csrf_token %}
+        <input type="hidden" name="myAction" value="insert">
+    
+        <div class="d-flex gap-3">
+            <div class="flex-grow-1">
+                <label for="name">name:</label>
+                <input type="text" name="name" class="form-control mb-3">
+            </div>
+            <div class="flex-grow-1">
+                <label for="contactname">contact name:</label>
+                <input type="text" name="contactname" class="form-control mb-3">
+            </div>
+        </div>
+    
+        <div class="d-flex gap-3">
+            <div class="flex-grow-1">
+                <label for="email">email:</label>
+                <input type="text" name="email" class="form-control mb-3">
+            </div>
+            <div class="flex-grow-1">
+                <label for="contactemail">contactemail:</label>
+                <input type="text" name="contactemail" class="form-control mb-3">
+            </div>
+        </div>
+
+        <label for="phone">phone:</label>
+        <input type="text" name="phone" class="form-control mb-3">
+    
+        <div class="d-flex gap-3">
+            <div class="flex-grow-1">
+                <label for="password">password:</label>
+                <input type="password" name="password" class="form-control mb-3">
+            </div>
+        
+            <div class="flex-grow-1">
+                <label for="confirmpassword">confirm password:</label>
+                <input type="password" name="confirmpassword" class="form-control mb-3">
+            </div>
+        </div>
+    
+        <label for="countryregioncode">country region code:</label>
+        <input type="text" name="countryregioncode" class="form-control mb-3">
+    
+        <div class="d-flex gap-3">
+            <div class="flex-grow-1">
+                <label for="postalcode">postal code:</label>
+                <input type="text" name="postalcode" class="form-control mb-3">
+            </div>
+        
+            <div class="flex-grow-1">
+                <label for="postaladdress">postal address:</label>
+                <input type="text" name="postaladdress" class="form-control mb-3">
+            </div>
+        
+            <div class="flex-grow-1">
+                <label for="city">city:</label>
+                <input type="text" name="city" class="form-control mb-3">
+            </div>
+        </div>
+    
+        <button class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+{% endblock %}
